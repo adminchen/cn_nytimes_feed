@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ruby $OPENSHIFT_HOMEDIR/script/spider.rb
+cd $OPENSHIFT_HOMEDIR/app-root/repo && RACK_ENV=production bundle exec ruby script/spider.rb
